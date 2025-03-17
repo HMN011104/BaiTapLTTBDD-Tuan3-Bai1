@@ -32,7 +32,7 @@ class HomeScreen extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          AssetImage('assets/picture1.png'), 
+          Image.asset('assets/picture1.png'), 
           SizedBox(height: 20),
           Text(
             "Jetpack Compose",
@@ -92,7 +92,7 @@ class ImageScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Image Detail")),
-      body: Center(child: AssetImage('assets/picture1.png')),
+      body: Center(child: Image.asset('assets/picture1.png')),
     );
   }
 }
